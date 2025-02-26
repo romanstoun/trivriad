@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a1a1a; /* Тёмный фон */
+    font-family: Arial, sans-serif;
+}
+
+.game-wrapper {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Полупрозрачный тёмный фон */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Лёгкое свечение */
+}
+
+h1 {
+    color: #ffd700; /* Золотистый текст */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.3); /* Эффект свечения */
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Адаптивный размер текста */
+}
+
+#game {
+    border: 5px solid #ffd700; /* Золотая рамка */
+    border-radius: 10px;
+    background: #2c2c2c; /* Тёмный фон поля */
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Лёгкое свечение */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ffd700; /* Золотистый текст */
+    margin-top: 10px;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    #game {
+        width: 100%;
+        height: calc(100vw * 1.5); /* Соотношение 320:480 */
+        max-height: 480px;
+    }
+}
